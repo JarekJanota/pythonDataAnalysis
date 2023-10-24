@@ -4,7 +4,8 @@ import json
 from colorama import Fore
 
 #odczyt json i wyświetlenie w konsoli danych
-df = pd.read_json(r'C:\Users\jaros\Desktop\data.json')
+file_path = 'data.json'
+df = pd.read_json(file_path)
 print(df.to_string())
 
 #wyświetlenie maksymalnego pulsu
